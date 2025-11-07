@@ -165,6 +165,31 @@ form button:active {
   box-shadow: 0 2px 10px rgba(22, 160, 133, 0.3);
 }
 
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 2px solid #e0e0e0;
+}
+
+footer p {
+  color: #7f8c8d;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+footer a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
 @media (max-width: 480px) {
   .container {
     padding: 1.5rem;

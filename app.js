@@ -1,4 +1,4 @@
-const BASE_URL = "https://api.fxratesapi.com/latest";
+const BASE_URL = "https://api.exchangerate-api.com/v4/latest";
 
 const dropdowns = document.querySelectorAll(".dropdown select");
 const btn = document.querySelector("form button");
@@ -7,7 +7,7 @@ const toCurr = document.querySelector(".to select");
 const msg = document.querySelector(".msg");
 
 for (let select of dropdowns) {
-  for (currCode in countryList) {
+  for (let currCode in countryList) {
     let newOption = document.createElement("option");
     newOption.innerText = currCode;
     newOption.value = currCode;
@@ -32,14 +32,13 @@ const updateExchangeRate = async () => {
     amount.value = "1";
   }
   
-  const URL = `${BASE_URL}?base=${encodeURIComponent(fromCurr.value)}&symbols=${encodeURIComponent(toCurr.value)}`;
+  const URL = `${BASE_URL}/${fromCurr.value}`;
 
   const response = await fetch(URL);
   const data = await response.json();
 
   const rate = data.rates[toCurr.value];
-
-  const finalAmount = (amtVal * rate).toFixed(4);
+  const finalAmount = (amtVal * rate).toFixed(2);
   msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
 };
 
