@@ -1,4 +1,4 @@
-# XChangeEase – Easy Currency Converter
+# XChangeEase – Currency Converter
 
 **XChangeEase** is a simple and responsive currency converter web app built using **HTML, CSS, and JavaScript**.  
 It fetches real-time exchange rates from the [ExchangeRate API](https://www.exchangerate-api.com/) and lets users easily convert between global currencies with country flags and instant results.
