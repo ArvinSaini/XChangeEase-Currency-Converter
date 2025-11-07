@@ -7,11 +7,11 @@ It fetches real-time exchange rates from the [ExchangeRate API](https://www.exch
 
 ## 1. Features
 
-1. Real-time currency exchange rates  
-2. Converts instantly between 150+ currencies  
-3. Auto-updating country flags  
-4. Clean, responsive, and beginner-friendly UI  
-5. Built with Fetch API and async/await
+1. Real-time currency exchange rates.  
+2. Converts instantly between 150+ currencies.  
+3. Auto-updating country flags.  
+4. Clean, responsive, and beginner-friendly UI.  
+5. Built with Fetch API and async/await.
 
 ---
 
